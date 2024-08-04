@@ -3,16 +3,20 @@ authors = ["RM"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Mdbook Template"
+title = "太史公書"
 [preprocessor.toc]
 command = "mdbook-toc"
 renderer = ["html"]
 [preprocessor.katex]
 after = ["links"]
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
 
 [output.html]
+additional-js = ["./src/theme/mermaid.min.js", "./src/theme/mermaid-init.js"]
 additional-css = ["./src/theme/heti.min.css"]
+no-section-label = false
 
-
-
-
+[output.html.fold]
+enable = true
+level = 1
