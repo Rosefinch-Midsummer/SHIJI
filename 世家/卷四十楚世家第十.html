@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>卷四十楚世家第十 - 太史公書</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href=".././src/theme/heti.min.css">
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../弁言.html">弁言</a></li><li class="chapter-item expanded affix "><li class="part-title">本紀</li><li class="chapter-item expanded "><a href="../本紀.html"><strong aria-hidden="true">1.</strong> 本紀</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../本紀/卷一五帝本紀第一.html"><strong aria-hidden="true">1.1.</strong> 卷一五帝本紀第一</a></li><li class="chapter-item "><a href="../本紀/卷二夏本紀第二.html"><strong aria-hidden="true">1.2.</strong> 卷二夏本紀第二</a></li><li class="chapter-item "><a href="../本紀/卷三殷本紀第三.html"><strong aria-hidden="true">1.3.</strong> 卷三殷本紀第三</a></li><li class="chapter-item "><a href="../本紀/卷四周本紀第四.html"><strong aria-hidden="true">1.4.</strong> 卷四周本紀第四</a></li><li class="chapter-item "><a href="../本紀/卷五秦本紀第五.html"><strong aria-hidden="true">1.5.</strong> 卷五秦本紀第五</a></li><li class="chapter-item "><a href="../本紀/卷六秦始皇本紀第六.html"><strong aria-hidden="true">1.6.</strong> 卷六秦始皇本紀第六</a></li><li class="chapter-item "><a href="../本紀/卷七項羽本紀第七.html"><strong aria-hidden="true">1.7.</strong> 卷七項羽本紀第七</a></li><li class="chapter-item "><a href="../本紀/卷八高祖本紀第八.html"><strong aria-hidden="true">1.8.</strong> 卷八高祖本紀第八</a></li><li class="chapter-item "><a href="../本紀/卷九呂后本紀第九.html"><strong aria-hidden="true">1.9.</strong> 卷九呂后本紀第九</a></li><li class="chapter-item "><a href="../本紀/卷十孝文本紀第十.html"><strong aria-hidden="true">1.10.</strong> 卷十孝文本紀第十</a></li><li class="chapter-item "><a href="../本紀/卷十一孝景本紀第十一.html"><strong aria-hidden="true">1.11.</strong> 卷十一孝景本紀第十一</a></li><li class="chapter-item "><a href="../本紀/卷十二孝武本紀第十二.html"><strong aria-hidden="true">1.12.</strong> 卷十二孝武本紀第十二</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">表</li><li class="chapter-item expanded "><a href="../表.html"><strong aria-hidden="true">2.</strong> 表</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../表/卷十三三代世表第一.html"><strong aria-hidden="true">2.1.</strong> 卷十三三代世表第一</a></li><li class="chapter-item "><a href="../表/卷十四十二諸侯年表第二.html"><strong aria-hidden="true">2.2.</strong> 卷十四十二諸侯年表第二</a></li><li class="chapter-item "><a href="../表/卷十五六國年表第三.html"><strong aria-hidden="true">2.3.</strong> 卷十五六國年表第三</a></li><li class="chapter-item "><a href="../表/卷十六秦楚之際月表第四.html"><strong aria-hidden="true">2.4.</strong> 卷十六秦楚之際月表第四</a></li><li class="chapter-item "><a href="../表/卷十七漢興以來諸侯王年表第五.html"><strong aria-hidden="true">2.5.</strong> 卷十七漢興以來諸侯王年表第五</a></li><li class="chapter-item "><a href="../表/卷十八高祖功臣侯者年表第六.html"><strong aria-hidden="true">2.6.</strong> 卷十八高祖功臣侯者年表第六</a></li><li class="chapter-item "><a href="../表/卷十九惠景閒侯者年表第七.html"><strong aria-hidden="true">2.7.</strong> 卷十九惠景閒侯者年表第七</a></li><li class="chapter-item "><a href="../表/卷二十建元以來侯者年表第八.html"><strong aria-hidden="true">2.8.</strong> 卷二十建元以來侯者年表第八</a></li><li class="chapter-item "><a href="../表/卷二十一建元以來王子侯者年表第九.html"><strong aria-hidden="true">2.9.</strong> 卷二十一建元以來王子侯者年表第九</a></li><li class="chapter-item "><a href="../表/卷二十二漢興以來將相名臣年表第十.html"><strong aria-hidden="true">2.10.</strong> 卷二十二漢興以來將相名臣年表第十</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">書</li><li class="chapter-item expanded "><a href="../書.html"><strong aria-hidden="true">3.</strong> 書</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../書/卷二十三禮書第一.html"><strong aria-hidden="true">3.1.</strong> 卷二十三禮書第一</a></li><li class="chapter-item "><a href="../書/卷二十四樂書第二.html"><strong aria-hidden="true">3.2.</strong> 卷二十四樂書第二</a></li><li class="chapter-item "><a href="../書/卷二十五律書第三.html"><strong aria-hidden="true">3.3.</strong> 卷二十五律書第三</a></li><li class="chapter-item "><a href="../書/卷二十六曆書第四.html"><strong aria-hidden="true">3.4.</strong> 卷二十六曆書第四</a></li><li class="chapter-item "><a href="../書/卷二十七天官書第五.html"><strong aria-hidden="true">3.5.</strong> 卷二十七天官書第五</a></li><li class="chapter-item "><a href="../書/卷二十八封禪書第六.html"><strong aria-hidden="true">3.6.</strong> 卷二十八封禪書第六</a></li><li class="chapter-item "><a href="../書/卷二十九河渠書第七.html"><strong aria-hidden="true">3.7.</strong> 卷二十九河渠書第七</a></li><li class="chapter-item "><a href="../書/卷三十平準書第八.html"><strong aria-hidden="true">3.8.</strong> 卷三十平準書第八</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">世家</li><li class="chapter-item expanded "><a href="../世家.html"><strong aria-hidden="true">4.</strong> 世家</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../世家/卷三十一吳太伯世家第一.html"><strong aria-hidden="true">4.1.</strong> 卷三十一吳太伯世家第一</a></li><li class="chapter-item "><a href="../世家/卷三十二齊太公世家第二.html"><strong aria-hidden="true">4.2.</strong> 卷三十二齊太公世家第二</a></li><li class="chapter-item "><a href="../世家/卷三十三魯周公世家第三.html"><strong aria-hidden="true">4.3.</strong> 卷三十三魯周公世家第三</a></li><li class="chapter-item "><a href="../世家/卷三十四燕召公世家第四.html"><strong aria-hidden="true">4.4.</strong> 卷三十四燕召公世家第四</a></li><li class="chapter-item "><a href="../世家/卷三十五管蔡世家第五.html"><strong aria-hidden="true">4.5.</strong> 卷三十五管蔡世家第五</a></li><li class="chapter-item "><a href="../世家/卷三十六陳杞世家第六.html"><strong aria-hidden="true">4.6.</strong> 卷三十六陳杞世家第六</a></li><li class="chapter-item "><a href="../世家/卷三十七衛康叔世家第七.html"><strong aria-hidden="true">4.7.</strong> 卷三十七衛康叔世家第七</a></li><li class="chapter-item "><a href="../世家/卷三十八宋微子世家第八.html"><strong aria-hidden="true">4.8.</strong> 卷三十八宋微子世家第八</a></li><li class="chapter-item "><a href="../世家/卷三十九晉世家第九.html"><strong aria-hidden="true">4.9.</strong> 卷三十九晉世家第九</a></li><li class="chapter-item expanded "><a href="../世家/卷四十楚世家第十.html" class="active"><strong aria-hidden="true">4.10.</strong> 卷四十楚世家第十</a></li><li class="chapter-item "><a href="../世家/卷四十一越王勾踐世家第十一.html"><strong aria-hidden="true">4.11.</strong> 卷四十一越王勾踐世家第十一</a></li><li class="chapter-item "><a href="../世家/卷四十二鄭世家第十二.html"><strong aria-hidden="true">4.12.</strong> 卷四十二鄭世家第十二</a></li><li class="chapter-item "><a href="../世家/卷四十三趙世家第十三.html"><strong aria-hidden="true">4.13.</strong> 卷四十三趙世家第十三</a></li><li class="chapter-item "><a href="../世家/卷四十四魏世家第十四.html"><strong aria-hidden="true">4.14.</strong> 卷四十四魏世家第十四</a></li><li class="chapter-item "><a href="../世家/卷四十五韓世家第十五.html"><strong aria-hidden="true">4.15.</strong> 卷四十五韓世家第十五</a></li><li class="chapter-item "><a href="../世家/卷四十六田敬仲完世家第十六.html"><strong aria-hidden="true">4.16.</strong> 卷四十六田敬仲完世家第十六</a></li><li class="chapter-item "><a href="../世家/卷四十七孔子世家第十七.html"><strong aria-hidden="true">4.17.</strong> 卷四十七孔子世家第十七</a></li><li class="chapter-item "><a href="../世家/卷四十八陳涉世家第十八.html"><strong aria-hidden="true">4.18.</strong> 卷四十八陳涉世家第十八</a></li><li class="chapter-item "><a href="../世家/卷四十九外戚世家第十九.html"><strong aria-hidden="true">4.19.</strong> 卷四十九外戚世家第十九</a></li><li class="chapter-item "><a href="../世家/卷五十楚元王世家第二十.html"><strong aria-hidden="true">4.20.</strong> 卷五十楚元王世家第二十</a></li><li class="chapter-item "><a href="../世家/卷五十一荊燕世家第二十一.html"><strong aria-hidden="true">4.21.</strong> 卷五十一荊燕世家第二十一</a></li><li class="chapter-item "><a href="../世家/卷五十二齊悼惠王世家第二十二.html"><strong aria-hidden="true">4.22.</strong> 卷五十二齊悼惠王世家第二十二</a></li><li class="chapter-item "><a href="../世家/卷五十三蕭相國世家第二十三.html"><strong aria-hidden="true">4.23.</strong> 卷五十三蕭相國世家第二十三</a></li><li class="chapter-item "><a href="../世家/卷五十四曹相國世家第二十四.html"><strong aria-hidden="true">4.24.</strong> 卷五十四曹相國世家第二十四</a></li><li class="chapter-item "><a href="../世家/卷五十五留侯世家第二十五.html"><strong aria-hidden="true">4.25.</strong> 卷五十五留侯世家第二十五</a></li><li class="chapter-item "><a href="../世家/卷五十六陳丞相世家第二十六.html"><strong aria-hidden="true">4.26.</strong> 卷五十六陳丞相世家第二十六</a></li><li class="chapter-item "><a href="../世家/卷五十七絳侯周勃世家第二十七.html"><strong aria-hidden="true">4.27.</strong> 卷五十七絳侯周勃世家第二十七</a></li><li class="chapter-item "><a href="../世家/卷五十八梁孝王世家第二十八.html"><strong aria-hidden="true">4.28.</strong> 卷五十八梁孝王世家第二十八</a></li><li class="chapter-item "><a href="../世家/卷五十九五宗世家第二十九.html"><strong aria-hidden="true">4.29.</strong> 卷五十九五宗世家第二十九</a></li><li class="chapter-item "><a href="../世家/卷六十三王世家第三十.html"><strong aria-hidden="true">4.30.</strong> 卷六十三王世家第三十</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">列傳</li><li class="chapter-item expanded "><a href="../列傳.html"><strong aria-hidden="true">5.</strong> 列傳</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../列傳/卷六十一伯夷列傳第一.html"><strong aria-hidden="true">5.1.</strong> 卷六十一伯夷列傳第一</a></li><li class="chapter-item "><a href="../列傳/卷六十二管晏列傳第二.html"><strong aria-hidden="true">5.2.</strong> 卷六十二管晏列傳第二</a></li><li class="chapter-item "><a href="../列傳/卷六十三老子韓非列傳第三.html"><strong aria-hidden="true">5.3.</strong> 卷六十三老子韓非列傳第三</a></li><li class="chapter-item "><a href="../列傳/卷六十四司馬穰苴列傳第四.html"><strong aria-hidden="true">5.4.</strong> 卷六十四司馬穰苴列傳第四</a></li><li class="chapter-item "><a href="../列傳/卷六十五孫子吳起列傳第五.html"><strong aria-hidden="true">5.5.</strong> 卷六十五孫子吳起列傳第五</a></li><li class="chapter-item "><a href="../列傳/卷六十六伍子胥列傳第六.html"><strong aria-hidden="true">5.6.</strong> 卷六十六伍子胥列傳第六</a></li><li class="chapter-item "><a href="../列傳/卷六十七仲尼弟子列傳第七.html"><strong aria-hidden="true">5.7.</strong> 卷六十七仲尼弟子列傳第七</a></li><li class="chapter-item "><a href="../列傳/卷六十八商君列傳第八.html"><strong aria-hidden="true">5.8.</strong> 卷六十八商君列傳第八</a></li><li class="chapter-item "><a href="../列傳/卷六十九蘇秦列傳第九.html"><strong aria-hidden="true">5.9.</strong> 卷六十九蘇秦列傳第九</a></li><li class="chapter-item "><a href="../列傳/卷七十張儀列傳第十.html"><strong aria-hidden="true">5.10.</strong> 卷七十張儀列傳第十</a></li><li class="chapter-item "><a href="../列傳/卷七十一樗里子甘茂列傳第十一.html"><strong aria-hidden="true">5.11.</strong> 卷七十一樗里子甘茂列傳第十一</a></li><li class="chapter-item "><a href="../列傳/卷七十二穰侯列傳第十二.html"><strong aria-hidden="true">5.12.</strong> 卷七十二穰侯列傳第十二</a></li><li class="chapter-item "><a href="../列傳/卷七十三白起王翦列傳第十三.html"><strong aria-hidden="true">5.13.</strong> 卷七十三白起王翦列傳第十三</a></li><li class="chapter-item "><a href="../列傳/卷七十四孟子荀卿列傳第十四.html"><strong aria-hidden="true">5.14.</strong> 卷七十四孟子荀卿列傳第十四</a></li><li class="chapter-item "><a href="../列傳/卷七十五孟嘗君列傳第十五.html"><strong aria-hidden="true">5.15.</strong> 卷七十五孟嘗君列傳第十五</a></li><li class="chapter-item "><a href="../列傳/卷七十六平原君虞卿列傳第十六.html"><strong aria-hidden="true">5.16.</strong> 卷七十六平原君虞卿列傳第十六</a></li><li class="chapter-item "><a href="../列傳/卷七十七魏公子列傳第十七.html"><strong aria-hidden="true">5.17.</strong> 卷七十七魏公子列傳第十七</a></li><li class="chapter-item "><a href="../列傳/卷七十八春申君列傳第十八.html"><strong aria-hidden="true">5.18.</strong> 卷七十八春申君列傳第十八</a></li><li class="chapter-item "><a href="../列傳/卷七十九范睢蔡澤列傳第十九.html"><strong aria-hidden="true">5.19.</strong> 卷七十九范睢蔡澤列傳第十九</a></li><li class="chapter-item "><a href="../列傳/卷八十樂毅列傳第二十.html"><strong aria-hidden="true">5.20.</strong> 卷八十樂毅列傳第二十</a></li><li class="chapter-item "><a href="../列傳/卷八十一廉頗藺相如列傳第二十一.html"><strong aria-hidden="true">5.21.</strong> 卷八十一廉頗藺相如列傳第二十一</a></li><li class="chapter-item "><a href="../列傳/卷八十二田單列傳第二十二.html"><strong aria-hidden="true">5.22.</strong> 卷八十二田單列傳第二十二</a></li><li class="chapter-item "><a href="../列傳/卷八十三魯仲連鄒陽列傳第二十三.html"><strong aria-hidden="true">5.23.</strong> 卷八十三魯仲連鄒陽列傳第二十三</a></li><li class="chapter-item "><a href="../列傳/卷八十四屈原賈生列傳第二十四.html"><strong aria-hidden="true">5.24.</strong> 卷八十四屈原賈生列傳第二十四</a></li><li class="chapter-item "><a href="../列傳/卷八十五呂不韋列傳第二十五.html"><strong aria-hidden="true">5.25.</strong> 卷八十五呂不韋列傳第二十五</a></li><li class="chapter-item "><a href="../列傳/卷八十六刺客列傳第二十六.html"><strong aria-hidden="true">5.26.</strong> 卷八十六刺客列傳第二十六</a></li><li class="chapter-item "><a href="../列傳/卷八十七李斯列傳第二十七.html"><strong aria-hidden="true">5.27.</strong> 卷八十七李斯列傳第二十七</a></li><li class="chapter-item "><a href="../列傳/卷八十八蒙恬列傳第二十八.html"><strong aria-hidden="true">5.28.</strong> 卷八十八蒙恬列傳第二十八</a></li><li class="chapter-item "><a href="../列傳/卷八十九張耳陳餘列傳第二十九.html"><strong aria-hidden="true">5.29.</strong> 卷八十九張耳陳餘列傳第二十九</a></li><li class="chapter-item "><a href="../列傳/卷九十魏豹彭越列傳第三十.html"><strong aria-hidden="true">5.30.</strong> 卷九十魏豹彭越列傳第三十</a></li><li class="chapter-item "><a href="../列傳/卷九十一黥布列傳第三十一.html"><strong aria-hidden="true">5.31.</strong> 卷九十一黥布列傳第三十一</a></li><li class="chapter-item "><a href="../列傳/卷九十二淮陰侯列傳第三十二.html"><strong aria-hidden="true">5.32.</strong> 卷九十二淮陰侯列傳第三十二</a></li><li class="chapter-item "><a href="../列傳/卷九十三韓信盧綰列傳第三十三.html"><strong aria-hidden="true">5.33.</strong> 卷九十三韓信盧綰列傳第三十三</a></li><li class="chapter-item "><a href="../列傳/卷九十四田儋列傳第三十四.html"><strong aria-hidden="true">5.34.</strong> 卷九十四田儋列傳第三十四</a></li><li class="chapter-item "><a href="../列傳/卷九十五樊酈滕灌列傳第三十五.html"><strong aria-hidden="true">5.35.</strong> 卷九十五樊酈滕灌列傳第三十五</a></li><li class="chapter-item "><a href="../列傳/卷九十六張丞相列傳第三十六.html"><strong aria-hidden="true">5.36.</strong> 卷九十六張丞相列傳第三十六</a></li><li class="chapter-item "><a href="../列傳/卷九十七酈生陸賈列傳第三十七.html"><strong aria-hidden="true">5.37.</strong> 卷九十七酈生陸賈列傳第三十七</a></li><li class="chapter-item "><a href="../列傳/卷九十八傅靳蒯成列傳第三十八.html"><strong aria-hidden="true">5.38.</strong> 卷九十八傅靳蒯成列傳第三十八</a></li><li class="chapter-item "><a href="../列傳/卷九十九劉敬叔孫通列傳第三十九.html"><strong aria-hidden="true">5.39.</strong> 卷九十九劉敬叔孫通列傳第三十九</a></li><li class="chapter-item "><a href="../列傳/卷一百季布欒布列傳第四十.html"><strong aria-hidden="true">5.40.</strong> 卷一百季布欒布列傳第四十</a></li><li class="chapter-item "><a href="../列傳/卷一百零一袁盎鼂錯列傳第四十一.html"><strong aria-hidden="true">5.41.</strong> 卷一百零一袁盎鼂錯列傳第四十一</a></li><li class="chapter-item "><a href="../列傳/卷一百零二張釋之馮唐列傳第四十二.html"><strong aria-hidden="true">5.42.</strong> 卷一百零二張釋之馮唐列傳第四十二</a></li><li class="chapter-item "><a href="../列傳/卷一百零三萬石張叔列傳第四十三.html"><strong aria-hidden="true">5.43.</strong> 卷一百零三萬石張叔列傳第四十三</a></li><li class="chapter-item "><a href="../列傳/卷一百零四田叔列傳第四十四.html"><strong aria-hidden="true">5.44.</strong> 卷一百零四田叔列傳第四十四</a></li><li class="chapter-item "><a href="../列傳/卷一百零五扁鵲倉公列傳第四十五.html"><strong aria-hidden="true">5.45.</strong> 卷一百零五扁鵲倉公列傳第四十五</a></li><li class="chapter-item "><a href="../列傳/卷一百零六吳王濞列傳第四十六.html"><strong aria-hidden="true">5.46.</strong> 卷一百零六吳王濞列傳第四十六</a></li><li class="chapter-item "><a href="../列傳/卷一百零七魏其武安列傳第四十七.html"><strong aria-hidden="true">5.47.</strong> 卷一百零七魏其武安列傳第四十七</a></li><li class="chapter-item "><a href="../列傳/卷一百零八韓長孺列傳第四十八.html"><strong aria-hidden="true">5.48.</strong> 卷一百零八韓長孺列傳第四十八</a></li><li class="chapter-item "><a href="../列傳/卷一百零九李將軍列傳第四十九.html"><strong aria-hidden="true">5.49.</strong> 卷一百零九李將軍列傳第四十九</a></li><li class="chapter-item "><a href="../列傳/卷一百一十匈奴列傳第五十.html"><strong aria-hidden="true">5.50.</strong> 卷一百一十匈奴列傳第五十</a></li><li class="chapter-item "><a href="../列傳/卷一百一十一衛將軍驃騎列傳第五十一.html"><strong aria-hidden="true">5.51.</strong> 卷一百一十一衛將軍驃騎列傳第五十一</a></li><li class="chapter-item "><a href="../列傳/卷一百一十二平津侯主父列傳第五十二.html"><strong aria-hidden="true">5.52.</strong> 卷一百一十二平津侯主父列傳第五十二</a></li><li class="chapter-item "><a href="../列傳/卷一百一十三南越列傳第五十三.html"><strong aria-hidden="true">5.53.</strong> 卷一百一十三南越列傳第五十三</a></li><li class="chapter-item "><a href="../列傳/卷一百一十四東越列傳第五十四.html"><strong aria-hidden="true">5.54.</strong> 卷一百一十四東越列傳第五十四</a></li><li class="chapter-item "><a href="../列傳/卷一百一十五朝鮮列傳第五十五.html"><strong aria-hidden="true">5.55.</strong> 卷一百一十五朝鮮列傳第五十五</a></li><li class="chapter-item "><a href="../列傳/卷一百一十六西南夷列傳第五十六.html"><strong aria-hidden="true">5.56.</strong> 卷一百一十六西南夷列傳第五十六</a></li><li class="chapter-item "><a href="../列傳/卷一百一十七司馬相如列傳第五十七.html"><strong aria-hidden="true">5.57.</strong> 卷一百一十七司馬相如列傳第五十七</a></li><li class="chapter-item "><a href="../列傳/卷一百一十八淮南衡山列傳第五十八.html"><strong aria-hidden="true">5.58.</strong> 卷一百一十八淮南衡山列傳第五十八</a></li><li class="chapter-item "><a href="../列傳/卷一百一十九循吏列傳第五十九.html"><strong aria-hidden="true">5.59.</strong> 卷一百一十九循吏列傳第五十九</a></li><li class="chapter-item "><a href="../列傳/卷一百二十汲鄭列傳第六十.html"><strong aria-hidden="true">5.60.</strong> 卷一百二十汲鄭列傳第六十</a></li><li class="chapter-item "><a href="../列傳/卷一百二十一儒林列傳第六十一.html"><strong aria-hidden="true">5.61.</strong> 卷一百二十一儒林列傳第六十一</a></li><li class="chapter-item "><a href="../列傳/卷一百二十二酷吏列傳第六十二.html"><strong aria-hidden="true">5.62.</strong> 卷一百二十二酷吏列傳第六十二</a></li><li class="chapter-item "><a href="../列傳/卷一百二十三大宛列傳第六十三.html"><strong aria-hidden="true">5.63.</strong> 卷一百二十三大宛列傳第六十三</a></li><li class="chapter-item "><a href="../列傳/卷一百二十四游俠列傳第六十四.html"><strong aria-hidden="true">5.64.</strong> 卷一百二十四游俠列傳第六十四</a></li><li class="chapter-item "><a href="../列傳/卷一百二十五佞幸列傳第六十五.html"><strong aria-hidden="true">5.65.</strong> 卷一百二十五佞幸列傳第六十五</a></li><li class="chapter-item "><a href="../列傳/卷一百二十六滑稽列傳第六十六.html"><strong aria-hidden="true">5.66.</strong> 卷一百二十六滑稽列傳第六十六</a></li><li class="chapter-item "><a href="../列傳/卷一百二十七日者列傳第六十七.html"><strong aria-hidden="true">5.67.</strong> 卷一百二十七日者列傳第六十七</a></li><li class="chapter-item "><a href="../列傳/卷一百二十八龜策列傳第六十八.html"><strong aria-hidden="true">5.68.</strong> 卷一百二十八龜策列傳第六十八</a></li><li class="chapter-item "><a href="../列傳/卷一百二十九貨殖列傳第六十九.html"><strong aria-hidden="true">5.69.</strong> 卷一百二十九貨殖列傳第六十九</a></li><li class="chapter-item "><a href="../列傳/卷一百三十太史公自序第七十.html"><strong aria-hidden="true">5.70.</strong> 卷一百三十太史公自序第七十</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">太史公書</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="卷四十楚世家第十"><a class="header" href="#卷四十楚世家第十">卷四十楚世家第十</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../世家/卷三十九晉世家第九.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../世家/卷四十一越王勾踐世家第十一.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../世家/卷三十九晉世家第九.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../世家/卷四十一越王勾踐世家第十一.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src=".././src/theme/mermaid.min.js"></script>
+        <script src=".././src/theme/mermaid-init.js"></script>
+
+
+    </div>
+    </body>
+</html>
